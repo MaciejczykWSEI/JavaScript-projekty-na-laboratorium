@@ -1,0 +1,84 @@
+﻿<html>
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <Title>Edytor</Title>
+    <link crossorigin="anonymous" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+</html>
+<body>
+    <div class="main">
+        <div class="row">
+            <div id="canvas"></div>
+            <div class="col-md-3">
+                <div class="Controls">
+                    <label for="inputEmail4">Colour</label>
+                    <form>
+                        <div class="form-row">
+                            <div class="col-md-6">
+                                <input class="form-control InPoint" id="color" name="ColorIn" type="text"
+                                       value="#000000"></input>
+                            </div>
+                            <div class="col-md-2">
+                                <input class="form-control" id="palette" name="color"
+                                       onchange="with (this.form) ColorIn.value = this.value" type="color"></input>
+                            </div>
+                        </div>
+                    </form>
+                    <label for="inputEmail4">Image</label>
+                    <input class="form-control" id="image" name="myFile" onchange="loadImage()" type="file"></input>
+                    <div class="form-row">
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Contrast</label>
+                            <input class="form-control" id="contrast" onchange="display()" type="range" min="0"
+                                   max="1000" value="100"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Brightness</label>
+                            <input class="form-control" id="brightness" onchange="display()" type="range" min="0"
+                                   max="1000" value="100"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Blur</label>
+                            <input class="form-control" id="blur" onchange="display()" type="range" min="0" max="100"
+                                   value="0"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Grayscale</label>
+                            <input class="form-control" id="grayscale" onchange="display()" type="range" min="0" max="1"
+                                   value="0"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Hue-rotate</label>
+                            <input class="form-control" id="hue-rotate" onchange="display()" type="range" min="0"
+                                   max="100" value="0"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Invert</label>
+                            <input class="form-control" id="invert" onchange="display()" type="range" min="0" max="100"
+                                   value="0"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Saturate</label>
+                            <input class="form-control" id="saturate" onchange="display()" type="range" min="0"
+                                   max="1000" value="100"></input>
+                        </div>
+                        <div class="col-md-6">
+                            <label for="inputEmail4">Sepia</label>
+                            <input class="form-control" id="sepia" onchange="display()" type="range" min="0" max="100"
+                                   value="0"></input>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/mail.js" type="text/javascript"></script>
+</body>
