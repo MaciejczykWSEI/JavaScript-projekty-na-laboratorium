@@ -1,0 +1,35 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body {
+    background: orange;
+}
+.wrapper {
+    position: relative;
+    height: 90vh;
+    font-family: 'Russo One', sans-serif;
+}
+.canvas {
+    max-height: 100%;
+    max-width: 100%;
+    border: 5px orange solid;
+    display: block;
+    margin: 0 auto;
+}
+.hud {
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    font-size: 16px;
+}
+.gameover {
+    font-size: 40px;
+    display: none;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    transform: translate(-50%, -100%);
+    text-align: center;
+}
