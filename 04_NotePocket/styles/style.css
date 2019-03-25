@@ -1,0 +1,89 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+}
+
+body {
+	font-family: 'Source Sans Pro', sans-serif;
+	background-color: gainsboro;
+	position: relative;
+}
+
+#notatki {
+	width: 100%;
+	height: 1000px;
+	background-color: gainsboro;
+}
+
+.notes {
+	margin: 10px;
+	display: inline-block;
+	position: relative;
+}
+
+.notes_title {
+	text-align: center;
+	padding-top: 10px;
+	position: relative;
+}
+
+.date_input {
+	position: relative;
+	bottom: -137px;
+	background-color: inherit;
+	font-size: 15px;
+	width: 60px;
+	border: 0;
+	left: 135px;
+}
+
+.color_div {
+	position: relative;
+	left: 0px;
+	top: 117px
+}
+
+.title_text {
+	background-color: #48D1CC;
+	font-size: 15px;
+	border: none;
+	text-align: center;
+}
+
+.text_input {
+	background-color: inherit;
+	font-size: 14px;
+	border: 0;
+	width: 190px;
+	height: 150px;
+	position: absolute;
+	resize: none;
+}
+
+#add {
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	background-color: light slate gray;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+#clear {
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	background-color: light slate gray;
+	font-size: 18px;
+	border-radius: 5px;
+}
+
+#clear_selected {
+	margin: 10px;
+	width: 200px;
+	height: 40px;
+	background-color: light slate gray;
+	font-size: 18px;
+	border-radius: 5px;
+}
