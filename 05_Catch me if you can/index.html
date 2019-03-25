@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Catch me if you can</title>
+    <link href="https://fonts.googleapis.com/css?family=Source+Sans+Pro:400,700&amp;subset=latin-ext" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lilita+One&amp;subset=latin-ext" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="intro">
+        <h1 class="h1">Catch me if you can</h1>
+        <div class="rules">
+            <h2 class="h2">Zasady</h2>
+            <ul class="ul">
+                <li>Steruj postacią za pomocą klawiszy W,S,A,D</li>
+                <li>Zbieraj gwiazdki znajdujące się w znanych europejskich miastach</li>
+                <li>Kto pierwszy, ten lepszy</li>
+                <li>Zezwól na sprawdzenie lokalizacji, aby wystartować ze swojego miasta</li>
+                <li>Możesz komunikować się z innymi graczami za pomocą chatu</li>
+                <li>Informacje o pojawieniu się nowych gwiazdek są wyświetlane w oknie czatu.</li>
+            </ul>
+            <button class="next button">DALEJ</button>
+        </div>
+        <div class="player-creator hidden">
+            <p class="p">Kliknij na obrazek, aby wylosować inną postać</p>
+            <img src="#" alt="ikona postaci" class="icon">
+            <div class="name">
+                <label for="name" class="name-label">Wpisz swoje imię: </label>
+                <input type="text" name="name" id="name" class="name-input">
+            </div>
+            <button class="start-game button">ROZPOCZNIJ GRĘ</button>
+        </div>
+    </div>
+    <main class="google-map hidden">
+    </main>
+    <div class="hud hidden">
+        <p class="hud-item">Twoje punkty: <span class="score"></span></p>
+        <div class="chat">
+            <div class="chat-window">
+            </div>
+            <div class="chat-inputs">
+                <input type="text" name="chat-input" id="chat-input" class="chat-input">
+                <button class="chat-submit button">WYŚLIJ</button>
+            </div>
+        </div>
+    </div>
+    <script src="js/city.js"></script>
+    <script src="js/main.js"></script>
+    <script async defer src="https://maps.googleapis.com/maps/api/js?key=AIzaSyBK3zdxfSAjyYoCNdSCJnm47ZHEgZPp2YI&callback=initMap"></script>
+</body>
+
+</html>
