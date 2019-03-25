@@ -1,0 +1,61 @@
+body {
+    background: url('photo.jpg');
+    font-family: 'Source Sans Pro', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 80vh;
+}
+
+* {
+    font-family: inherit;
+}
+
+.wrapper {
+    background-color: #ececec;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 20px 20px 0 0;
+}
+
+.channels {
+    display: flex;
+}
+
+.channel {
+    padding: 30px;
+    min-width: 160px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.play-btns {
+    display: flex;
+}
+
+.sound-btn {
+    font-size: 40px;
+    display: block;
+    width: 100px;
+    height: 60px;
+    transform: scale(1);
+    transition: all .1s linear;
+}
+.rec-btn {
+    margin-bottom: 5px;
+}
+.title {
+    margin: 0;
+}
+
+.enlarge {
+    transform: scale(1.04);
+}
+
+audio {
+    display: none;
+}
